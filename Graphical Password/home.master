@@ -1,0 +1,88 @@
+<%@ Master Language="C#" CodeFile="home.master.cs" Inherits="home" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    
+     <link href="Styles/menu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+        <style>
+
+        h1
+        {
+            font-size:40px;
+            color:blue;
+            margin:0px;
+            background-color: white;
+        }
+         h2
+        {
+            font-size:large;
+            color:navy;
+            margin:0px;
+   
+        }
+        
+        .style1
+        {
+            width: 943px;
+        }
+        
+        .style2
+        {
+            font-family: "Agency FB";
+                width: 863px;
+            }
+        
+        .style3
+        {
+            width: 112px;
+        }
+        
+            .auto-style1 {
+                height: 90px;
+                width: 1052px;
+            }
+        </style>
+
+    </asp:ContentPlaceHolder>
+</head>    
+<body style=" margin-top:20px;background-color:white;">
+<table bgcolor="white" class="auto-style1">
+<tr>
+<td class="style3"><h1>
+    <asp:Image ID="Image1" runat="server" Height="134px" 
+        ImageUrl="~/images/graphic.jpg" Width="168px" />
+    </h1></td>
+<td class="style1"><h1 class="style2">&nbsp;<asp:Image ID="Image2" runat="server" 
+        Height="142px" ImageUrl="~/images/titleimage1.png" Width="606px" />
+    </h1>
+    <td class="style3">&nbsp;</td></tr>
+</table>
+<div id="ai" >
+    <form id="form1" runat="server">
+    <center>         
+ <ul id="menu">
+    <li><a href="home.aspx">HOME</a></li>
+    <li><a href="admin.aspx">AdminLogin</a></li>
+    <li><a href="login.aspx">UserLogin</a></li>
+     <li><a href="newregistration.aspx">NewRegistration</a></li>
+     <asp:Menu ID="Menu2" runat="server">
+     </asp:Menu>
+     <asp:Menu ID="Menu3" runat="server">
+     </asp:Menu>
+</ul>
+    </center>
+    
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+    </div>
+    <p>
+        &nbsp;</p>
+</body>
+</html>
