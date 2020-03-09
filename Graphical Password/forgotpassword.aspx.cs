@@ -32,7 +32,7 @@ public partial class forgotpassword : System.Web.UI.Page
             try
             {
                 string senderID = "graphicpass01@gmail.com"; // use sender’s email id here..
-                string senderPassword = "mohansairam"; //sender password here…
+                string senderPassword = "dfvdvdfdvddfd"; //sender password here…
                 SmtpClient smtp = new SmtpClient();
 
                 smtp.Host = "smtp.gmail.com";
